@@ -63,7 +63,7 @@ You're now all set to run the remaining notebooks in this repository!
 
 ### Notebook Groups
 
-#### Group A: Dependency & input file downloads
+#### Group A: Dependency & input file downloads (\*MUST BE RUN FIRST\*)
 - [**Step 0a: Install remaining R packages.**](code/0a_install_remaining_R_packages.ipynb) This notebook downloads two additional R packages which we could not obtain using conda due to dependency issues.
 - [**Step 0b: Download input files from Zenodo.**](code/0b_download_input_files_from_zenodo.ipynb) This notebook downloads input files necessary for the all following notebooks from Zenodo.
 
@@ -78,7 +78,7 @@ You're now all set to run the remaining notebooks in this repository!
 #### Group C: Evaluate gene signature derivation and *Ep300* knockout RNA-seq data
 - [**Step 5: Evaluate the derivation of the epigenetic memory astrocyte up- and down-signature gene sets.**](code/5__evaluate_signature_derivation.ipynb) This notebook examines how the epigenetic memory astrocyte up- and down-signature gene sets were derived from the two-hit versus one-hit cytokine stimulus RNA-seq experiment.
 - [**Step 6: Evaluate Ep300 knockout differential expression test results.**](code/6__ep300_KOs.ipynb) This notebook examines the RNA-seq differential expression test results from the *Ep300* knockout experiments in comparison to the epigenetic memory astrocyte gene signatures.
-- [**Step 7: Run preranked GSEA with Ep300 knockout differential expression test results**.](code/7__ep300_KOs_GSEA.ipynb) This notebook uses the [GSEApy python package]() to run pre-ranked gene set enrichment analysis to evaluate enrichment of the epigenetic memory astrocyte up- and down-signature gene sets in the *Ep300* knockout experiments.
+- [**Step 7: Run preranked GSEA with Ep300 knockout differential expression test results**.](code/7__ep300_KOs_GSEA.ipynb) This notebook uses the [GSEApy python package](https://github.com/zqfang/GSEApy) to run pre-ranked gene set enrichment analysis to evaluate enrichment of the epigenetic memory astrocyte up- and down-signature gene sets in the *Ep300* knockout experiments.
 
 #### Group D: Reanalysis of the mouse EAE single-cell RNA-seq data from [Wheeler et al 2020 (PMID: 32051591)](https://pubmed.ncbi.nlm.nih.gov/32051591/)
 - [**Step 8: Reanalysis of mouse single-cell RNA-seq data from Wheeler et al.**](code/8__mouse_EAE_singlecell_analysis.ipynb) This notebook performs the majority of the reanalysis of the Wheeler et al single-cell data using a Seurat object provided to us by the authors of Lee et al 2024.
