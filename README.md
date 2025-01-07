@@ -1,6 +1,6 @@
 # EpiMemAstros
 
-Description pending.
+This repository contains code for our reanalysis of data from [Lee et al 2024 (PMID: 38509377)](https://pubmed.ncbi.nlm.nih.gov/38509377/), which we present in annotated Jupyter notebook files containing both Python and R code.
 
 ## Requirements
 
@@ -64,7 +64,7 @@ You're now all set to run the remaining notebooks in this repository!
 ### Notebook Groups
 
 #### Group A: Dependency & input file downloads
-- **Step 0a: Install remaining R packages.** This notebook downloads two additional R packages which we could not obtain using conda due to dependency issues.
+- [**Step 0a: Install remaining R packages.**](code/0a_install_remaining_R_packages.ipynb) This notebook downloads two additional R packages which we could not obtain using conda due to dependency issues.
 - **Step 0b: Download input files from Zenodo.** This notebook downloads input files necessary for the all following notebooks from Zenodo.
 
 #### Group B: Using the Allen Brain Cell Atlas to evaluate the epigenetic memory astrocyte gene signatures
@@ -73,7 +73,7 @@ You're now all set to run the remaining notebooks in this repository!
 - **Step 3: Evaluate expression of the epigenetic memory astrocyte gene signature across cell types in the Allen Brain Cell Atlas.** This notebook calculates and plots enrichment scores for single cells across major cell type classes present in the Allen Brain Cell Atlas for the epigenetic memory astrocyte gene signatures.
 - **Step 4: Evaluate expression of up- and down-signature genes in Allen Brain Cell atlas.** This notebook generates heatmaps showing expression of the genes in the epigenetic memory astrocyte up- and down-signatures across the major cell type classes in the Allen Brain Cell Atlas.
 
-Note: Group B notebooks require a significant amount of disk space and memory to run given the very large size of the Allen Brain Cell single-cell atlas. You can skip running this group of notebooks and all other notebook groups can still be run. If you choose to do this, you will need to skip Part 1 of the Step 9 notebook due to its use of the large AnnData object created by Step 2. See the Step 9 notebook for details.
+   Note: Group B notebooks require a significant amount of disk space and memory to run given the very large size of the Allen Brain Cell single-cell atlas. You can skip running this group of notebooks and all other notebook groups can still be run. If you choose to do this, you will need to skip Part 1 of the Step 9 notebook due to its use of the large AnnData object created by Step 2. See the Step 9 notebook for details.
 
 #### Group C: Evaluate gene signature derivation and *Ep300* knockout RNA-seq data
 - **Step 5: Evaluate the derivation of the epigenetic memory astrocyte up- and down-signature gene sets.** This notebook examines how the epigenetic memory astrocyte up- and down-signature gene sets were derived from the two-hit versus one-hit cytokine stimulus RNA-seq experiment.
@@ -89,3 +89,8 @@ Note: Group B notebooks require a significant amount of disk space and memory to
 - **Step 11: Calculate nuclear fraction with DropletQC**. This notebook extracts metadata from a preprocessed Seurat object provided to us by the authors of Lee et al, and includes optional code for calculation of the nuclear fraction quality control metric using the [DropletQC package (Muskovic & Powell 2021 (PMID: 34857027))](https://pubmed.ncbi.nlm.nih.gov/34857027/).
 - **Step 12: Reanalysis of human single-nucleus RNA-seq data from Absinta et al and Schirmer et al.** This notebook evaluates the clusters presented by Lee et al in their reanalysis of the RNA-seq data from the Absinta et al and Schirmer et al datasets.
 - **Step 13: Reanalysis of Cluster 2 from the human single-nucleus RNA-seq data.** This notebook evaluates the effects of ambient RNA removal and empty droplet detection, quality control filtering, and doublet detection on the cluster described as epigenetic memory astrocytes and performs subclustering to detect non-astrocyte contamination.
+
+
+## License
+
+[MIT](LICENSE) © [liddelowlab](https://github.com/liddelowlab).
