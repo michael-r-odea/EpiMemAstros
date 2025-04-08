@@ -1,6 +1,6 @@
 # Epigenetic memory astrocytes are likely an artifact of immune cell contamination
 
-This repository contains all code for the analyses in the [O'Dea & Liddelow 2025 preprint "Epigenetic memory astrocytes are likely an artifact of immune cell contamination"](https://doi.org/10.1101/2025.04.04.647246), in which we evaluate claims from [Lee et al 2024 (PMID: 38509377)](https://pubmed.ncbi.nlm.nih.gov/38509377/). All analyses are presented in annotated Jupyter notebook files containing both Python and R code. 
+This repository contains all code for the analyses in the O'Dea & Liddelow 2025 preprint ["Epigenetic memory astrocytes are likely an artifact of immune cell contamination"](https://doi.org/10.1101/2025.04.04.647246), in which we evaluate claims from [Lee et al 2024 (PMID: 38509377)](https://pubmed.ncbi.nlm.nih.gov/38509377/). All analyses are presented in annotated Jupyter notebook files containing both Python and R code. 
 
 ***Click the Step 0-17 links below to view HTML versions of the notebooks.***
 
